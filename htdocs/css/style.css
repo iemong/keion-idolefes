@@ -1,0 +1,69 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(0, 187, 255, 0.2);
+  font-size: 1.0rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  padding: 22px;
+  background-color: #00BBFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header .button {
+  height: 30px;
+}
+
+main {
+  padding: 40px 22px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+main .dempaColList {
+  display: flex;
+  justify-content: space-between;
+}
+main .dempaColList__child {
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+main .dempaColList__child a {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.mirin, main .dempaColList .mirin a {
+  background-color: #ff0000;
+}
+
+.risa, main .dempaColList .risa a {
+  background-color: #ffffff;
+}
+
+.nemu, main .dempaColList .nemu a {
+  background-color: #73F8CF;
+}
+
+.eimi, main .dempaColList .eimi a {
+  background-color: #FFFF00;
+}
+
+.moga, main .dempaColList .moga a {
+  background-color: #D52DFD;
+}
+
+.ayane, main .dempaColList .ayane a {
+  background-color: #0000FF;
+}

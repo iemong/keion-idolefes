@@ -1,0 +1,69 @@
+$h_color: #00BBFF;
+$dempa: mirin, risa, nemu, eimi, moga, ayane;
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: rgba(0,187,255,0.2);
+  font-size: 1.0rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  padding: 22px;
+  background-color: $h_color;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .button {
+    height: 30px;
+  }
+}
+main {
+  padding: 40px 22px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .dempaColList {
+    display: flex;
+    justify-content: space-between;
+    &__child {
+      border-radius: 20px;
+      margin-bottom: 25px;
+      a {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+      }
+    }
+    @each $class_name in $dempa {
+      $index_key: index($dempa, $class_name);
+
+      .#{$class_name} a {
+          @extend .#{$class_name};
+      }
+    }
+  }
+}
+.mirin {
+        background-color: #ff0000;
+}
+.risa {
+        background-color: #ffffff;
+}
+.nemu {
+        background-color: #73F8CF;
+}
+.eimi {
+        background-color: #FFFF00;
+}
+.moga {
+        background-color: #D52DFD;
+}
+.ayane {
+        background-color: #0000FF;
+}
